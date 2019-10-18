@@ -3,6 +3,8 @@ $(document).ready(function() {
 
     $('.js-save').on('click', function() {
         /* get the key and the value */
+        var datetime = "2018-05-16 12:57:13"; //TIMESTAMP
+        moment(datetime).format("DD/MM/YYYY"); // you get "16/05/2018"        
         var key = $(this).data('key');
         var value = $(`#${key}`).val();
 
@@ -28,11 +30,11 @@ $(document).ready(function() {
 var currentHour = moment().hours();
 var blockHour = $("<color-div>");
 if (currentHour > blockHour) {
-    document.body.style.backgroundColor="yellow";
+    document.blockHour.style.backgroundColor="yellow";
 } else if (currentHour === blockHour) {
-    document.body.style.backgroundColor="orange";
+    document.blockHour.style.backgroundColor="orange";
 } else {
-    document.body.style.backgroundColor="grey";
+    document.blockHour.style.backgroundColor="grey";
 }
 //     /* set moment = id */
 //     var currentHour = moment().hours();
