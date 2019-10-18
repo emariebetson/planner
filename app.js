@@ -27,8 +27,9 @@ $(document).ready(function() {
     $('#hour-17').val(dailyTasks['hour-17']);
 });
 
-var currentHour = moment().hours();
-var blockHour = $("<color-div>");
+var currentHour = moment().gethours();
+var blockHour = $("#color-div");
+
 if (currentHour > blockHour) {
     document.blockHour.style.backgroundColor="yellow";
 } else if (currentHour === blockHour) {
