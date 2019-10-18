@@ -27,7 +27,7 @@ $(document).ready(function() {
     $('#hour-17').val(dailyTasks['hour-17']);
 });
 
-var currentHour = moment().gethours();
+var currentHour = moment().hours();
 var blockHour = $("#color-div");
 
 if (currentHour > blockHour) {
@@ -37,6 +37,7 @@ if (currentHour > blockHour) {
 } else {
     document.blockHour.style.backgroundColor="grey";
 }
+
 //     /* set moment = id */
 //     var currentHour = moment().hours();
 //     var blockHour = $("<color-div>");
