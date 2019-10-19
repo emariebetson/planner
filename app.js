@@ -27,16 +27,15 @@ $(document).ready(function() {
     $('#hour-17').val(dailyTasks['hour-17']);
 });
 
-var currentHour = moment().hours();
-var blockHour = $("#color-div");
+// var currentHour = moment().hours();
 
-if (currentHour > blockHour) {
-    document.blockHour.style.backgroundColor="yellow";
-} else if (currentHour === blockHour) {
-    document.blockHour.style.backgroundColor="orange";
-} else {
-    document.blockHour.style.backgroundColor="grey";
-}
+// if (currentHour > blockHour) {
+//     document.color-div.style.backgroundColor="yellow";
+// } else if (currentHour === blockHour) {
+//     document.color-div.style.backgroundColor="orange";
+// } else {
+//     document.color-div.style.backgroundColor="grey";
+// }
 
 //     /* set moment = id */
 //     var currentHour = moment().hours();

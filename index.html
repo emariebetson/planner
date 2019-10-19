@@ -5,54 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Day Planner</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <style type="text/css">
+        .emeaday { background-color:green; }
+        .emeanight { background-color:blue; }
+    </style>    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
 </head>
 <body>
         <p id="date"></p>
         <script>
         document.getElementById("date").innerHTML = Date();
         </script>
-    <div>
+    <div class="hour" id="9">
         <div class="color-div">9:00</div>
         <textarea id="hour-9"></textarea>
         <button class="js-save" data-key="hour-9">save</button>
     </div>
-    <div>
-        <div class="color-div">10:00</div>
+    <div class="hour" id="10">
+            <div class="color-div">10:00</div>
         <textarea id="hour-10"></textarea>
         <button class="js-save" data-key="hour-10">save</button>
     </div>
-    <div>
+    <div class="hour">
         <div class="color-div">11:00</div>
         <textarea id="hour-11"></textarea>
         <button class="js-save" data-key="hour-11">save</button>
     </div>
-    <div>
+    <div class="hour">
         <div class="color-div">12:00</div>
         <textarea id="hour-12"></textarea>
         <button class="js-save" data-key="hour-12">save</button>
     </div>
-    <div>
+    <div class="hour">
         <div class="color-div">13:00</div>
         <textarea id="hour-13"></textarea>
         <button class="js-save" data-key="hour-13">save</button>
     </div>
-    <div>
+    <div class="hour">
         <div class="color-div">14:00</div>
         <textarea id="hour-14"></textarea>
         <button class="js-save" data-key="hour-14">save</button>
     </div>
-    <div>
+    <div class="hour">
         <div class="color-div">15:00</div>
         <textarea id="hour-15"></textarea>
         <button class="js-save" data-key="hour-15">save</button>
     </div>
-    <div>
+    <div class="hour">
         <div class="color-div">16:00</div>
         <textarea id="hour-16"></textarea>
         <button class="js-save" data-key="hour-16">save</button>
     </div>
-    <div>
+    <div class="hour">
         <div class="color-div">17:00</div>
         <textarea id="hour-17"></textarea>
         <button class="js-save" data-key="hour-17">save</button>
@@ -61,6 +64,19 @@
         moment().format();
     </script>
     <script src="./app.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var h = new Date().getHours();
+            $('.hour').each(function() {
+            var currentHour = $(this).attr('id');
+            if (currentHour < h) {
+//this is where i need to style textarea
+            }
+            });
+            document.body.div.color-div === (9 > h || 18 < h) ? "emeanight" : "emeaday";
+            alert(h);
+        });
+    </script>
     
 </body>
 </html>
