@@ -27,31 +27,4 @@ $(document).ready(function() {
     $('#hour-17').val(dailyTasks['hour-17']);
 });
 
-// var currentHour = moment().hours();
 
-// if (currentHour > blockHour) {
-//     document.color-div.style.backgroundColor="yellow";
-// } else if (currentHour === blockHour) {
-//     document.color-div.style.backgroundColor="orange";
-// } else {
-//     document.color-div.style.backgroundColor="grey";
-// }
-
-//     /* set moment = id */
-//     var currentHour = moment().hours();
-//     var blockHour = $("<color-div>");
-//         if blockhour === currentHour
-//     var colors = ['red', 'blue', 'green'];
-//   $.each($('.color-div'), function() {
-//     var new_color = colors[Math.floor(Math.random() * colors.length)];
-//     $(this).css('background-color', new_color);
-//   });
-// });
-//     // var currentHour = moment().hours();
-
-//     /*loop through your hours 
-//     var blockHour = id in HTMLAllCollection; 
-//     if (blockhour < currentHour)
-//     style 
-//     if (blockhour === currentHour)
-//     style */
